@@ -1,0 +1,26 @@
+aws_dbt_snowflake_project:
+  outputs:
+    dev:
+      account: HNPEOSQ-IB94473
+      database: AIRBNB
+      password: Lahore123@
+      role: ACCOUNTADMIN
+      schema: dbt_schema
+      threads: 1
+      type: snowflake
+      user: '  arshakhan9'
+      warehouse: COMPUTE_WH
+  target: dev
+snowflakes_project:
+  outputs:
+    dev:
+      account: hnpeosq-ib94473
+      database: AIRBNB
+      password: TxqfYCXD63TfbcR
+      role: ACCOUNTADMIN
+      schema: STAGING
+      threads: 4
+      type: snowflake
+      user: arshakhan9
+      warehouse: COMPUTE_WH
+  target: dev
